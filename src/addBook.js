@@ -33,9 +33,9 @@ export class AddBook extends React.Component {
                 <div className={`modalWindow ${visibility ? 'modalVisible' : 'modalNoVisible'}`}>
                     <div className='modalHeader'>
                         {
-                           selectedBook
-                               ? <h1>Редактировать</h1>
-                               : <h1>Добавить</h1>
+                            selectedBook
+                                ? <h1>Редактировать</h1>
+                                : <h1>Добавить</h1>
                         }
                         <img className='closeModal' src="../img/close.png" alt="close" onClick={onCancel}/>
                     </div>
@@ -47,8 +47,8 @@ export class AddBook extends React.Component {
                             {
                                 headers.map((header, index) =>
                                     <div className='field' key={index}>
-                                        <label htmlFor={header}>{bookFieldNames[header]}:</label>
-                                        <input id={header} type='text' name='text'
+                                        <input id={'modal' + header} type='text' name='text'
+                                               placeholder={bookFieldNames[header]}
                                                value={this.state[header]}
                                                onChange={(e) => {
                                                    this.setState({
@@ -65,16 +65,16 @@ export class AddBook extends React.Component {
                                 selectedBook
                                     ? <div>
                                     <button type='button'
-                                            className='btn btn-default buttonStyle'
-                                            onClick={() => onDelete({...this.state})}>Удалить
+                                            className='buttonStyle'
+                                            onClick={() => onEdit({...this.state})}>Сохранить
                                     </button>
                                     <button type='button'
-                                            className='btn btn-default buttonStyle'
-                                            onClick={() => onEdit({...this.state})}>Сохранить
+                                            className='buttonStyle buttonDel'
+                                            onClick={() => onDelete({...this.state})}>Удалить
                                     </button>
                                 </div>
                                     : <button type='button'
-                                              className='btn btn-default buttonStyle'
+                                              className='buttonStyle'
                                               onClick={() => onAdd({...this.state})}>Добавить
                                 </button>
                             }

@@ -21178,7 +21178,7 @@ exports = module.exports = __webpack_require__(85)(undefined);
 
 
 // module
-exports.push([module.i, "body {\n    background: #f7f7f7;\n}\n\n.headWorkingField {\n    width: 100%;\n    margin-top: 0px;\n    margin-bottom: 40px;\n    padding: 35px;\n    display: table;\n    position: relative;\n}\n\n.headPosition {\n    position: absolute;\n    background: #ffffff;\n}\n\n.textFont {\n    font-family: \"Noto Sans\", Arial, sans-serif;\n    font-size: 34px;\n    font-weight: 100;\n    width: 300px;\n    float: left;\n    display: table-cell;\n    vertical-align: middle;\n    margin-top: 13px;\n}\n\n.filterAndButton {\n    text-align: right;\n    width: 580px;\n    margin: auto;\n    display: table-cell;\n    vertical-align: middle;\n}\n\n.filterStyle {\n    width: 250px;\n    height: 55px;\n    font-family: \"Noto Sans\", Arial, sans-serif;\n    font-size: 12px;\n    padding-left: 20px;\n    border: none;\n    border-bottom: 2px solid #aeaeae;\n    display: table-cell;\n    vertical-align: middle;\n    margin-left: 30%;\n    margin-right: 4%;\n}\n\n.buttonStyle {\n    font-size: 14px;\n    width: 200px;\n    height: 45px;\n    background: #8dd6f5;\n    font-family: \"Noto Sans\", Arial, sans-serif;\n    color: white;\n    border: none;\n    border-radius: 25px;\n}\n\n.addButton {\n    float: right;\n}\n\n.textFont {\n    font-family: \"Noto Sans\", Arial, sans-serif;\n    font-size: 34px;\n    font-weight: 600;\n}\n\n.nullDiv {\n    height: 0px;\n}\n\n.book {\n    width: 30%;\n    background: white;\n    float: left;\n    margin: 1%;\n    padding: 2%;\n}\n\n.photo {\n    height: 205px;\n    width: 145px;\n    border: 1px solid black;\n    float: left;\n}\n\n.bookContent {\n    margin-left: 45%;\n\n}\n\n#author, #style, #language, #year {\n    color: #7e7e7e;\n    font-family: \"Noto Sans\", Arial, sans-serif;\n    font-size: 14px;\n}\n\n#name {\n    font-size: 20px;\n    font-weight: 700;\n}\n\nlabel {\n    float: left;\n    padding-right: 10px;\n}\n\n.blackout {\n    height: 100%;\n    width: 100%;\n    background: black;\n    opacity: 0.8;\n    position: absolute;\n    z-index: 15;\n}\n\n.modalWindow {\n    background: #f2f2f2;\n    height: 40%;\n    width: 750px;\n    position: absolute;\n    left: 50%;\n    margin-left: -300px;\n    z-index: 100;\n    opacity: 1;\n    border-radius: 5px;\n    padding: 0;\n}\n\n.modalNoVisible {\n    display: none;\n}\n\n.modalVisible {\n    display: block;\n}\n\n.modalHeader {\n    background: white;\n    height: 100px;\n    width: 100%;\n    font-family: \"Noto Sans\", Arial, sans-serif;\n    font-size: 30px;\n    margin-top: 0px;\n    padding: 20px;\n    display: table;\n}\n\n#buttonDeleteBook {\n    margin-left: 182px;\n}\n\nh1 {\n    margin: 0px;\n    display: table-cell;\n    vertical-align: middle;\n}\n\n.closeModal {\n    float: right;\n    margin: 10px;\n}\n\n.photoModal{\n    background: white;\n    margin-right: 5%;\n}\n\n.modalContent{\n    margin: 5%;\n}", ""]);
+exports.push([module.i, "body {\n    background: #f7f7f7;\n}\n\n.headWorkingField {\n    width: 100%;\n    margin-top: 0px;\n    margin-bottom: 40px;\n    padding: 35px;\n    display: table;\n    position: relative;\n}\n\n.headPosition {\n    position: absolute;\n    background: #ffffff;\n}\n\n.textFont {\n    font-family: \"Noto Sans\", Arial, sans-serif;\n    font-size: 34px;\n    font-weight: 100;\n    width: 300px;\n    float: left;\n    display: table-cell;\n    vertical-align: middle;\n    margin-top: 13px;\n}\n\n.filterAndButton {\n    text-align: right;\n    width: 580px;\n    margin: auto;\n    display: table-cell;\n    vertical-align: middle;\n}\n\n.filterStyle {\n    width: 250px;\n    height: 55px;\n    font-family: \"Noto Sans\", Arial, sans-serif;\n    font-size: 12px;\n    padding-left: 20px;\n    border: none;\n    border-bottom: 2px solid #aeaeae;\n    display: table-cell;\n    vertical-align: middle;\n    margin-left: 30%;\n    margin-right: 4%;\n}\n\n.buttonStyle {\n    font-size: 14px;\n    width: 200px;\n    height: 45px;\n    background: #8dd6f5;\n    font-family: \"Noto Sans\", Arial, sans-serif;\n    color: white;\n    border: none;\n    border-radius: 25px;\n}\n\n.addButton {\n    float: right;\n}\n\n.textFont {\n    font-family: \"Noto Sans\", Arial, sans-serif;\n    font-size: 34px;\n    font-weight: 600;\n}\n\n.nullDiv {\n    height: 0px;\n}\n\n.book {\n    width: 30%;\n    background: white;\n    float: left;\n    margin: 1%;\n    padding: 2%;\n}\n\n.photo {\n    height: 205px;\n    width: 145px;\n    border: 1px solid black;\n    float: left;\n}\n\n.bookContent {\n    padding: 0 0 0 35%;\n\n}\n\n#author, #style, #language, #year {\n    color: #7e7e7e;\n    font-family: \"Noto Sans\", Arial, sans-serif;\n    font-size: 14px;\n}\n\n#name {\n    font-size: 20px;\n    font-weight: 700;\n}\n\nlabel {\n    float: left;\n    padding-right: 10px;\n}\n\n.blackout {\n    height: 100%;\n    width: 100%;\n    background: black;\n    opacity: 0.8;\n    position: absolute;\n    z-index: 15;\n}\n\n.modalWindow {\n    background: #f2f2f2;\n    height: auto;\n    width: 680px;\n    position: absolute;\n    left: 50%;\n    margin-left: -300px;\n    z-index: 100;\n    opacity: 1;\n    border-radius: 5px;\n    padding: 0;\n}\n\n.modalNoVisible {\n    display: none;\n}\n\n.modalVisible {\n    display: block;\n}\n\n.modalHeader {\n    background: white;\n    height: 100px;\n    width: 100%;\n    font-family: \"Noto Sans\", Arial, sans-serif;\n    font-size: 30px;\n    margin-top: 0px;\n    padding: 20px;\n    display: table;\n}\n\nh1 {\n    margin: 0px;\n    display: table-cell;\n    vertical-align: middle;\n}\n\n.closeModal {\n    float: right;\n    margin: 10px;\n}\n\n.photoModal{\n    background: white;\n    margin-right: 5%;\n    margin-bottom: 6%;\n}\n\n.modalContent{\n    margin: 5%;\n}\n\n#modalauthor, #modalstyle, #modallanguage, #modalyear, #modalname {\n    margin-bottom: 1%;\n    width: 200px;\n}\n\n.buttonDel{\n    margin-left: 5%;\n}", ""]);
 
 // exports
 
@@ -21526,13 +21526,8 @@ var AddBook = (function (_React$Component) {
                                 return _react2['default'].createElement(
                                     'div',
                                     { className: 'field', key: index },
-                                    _react2['default'].createElement(
-                                        'label',
-                                        { htmlFor: header },
-                                        _bookFieldNames.bookFieldNames[header],
-                                        ':'
-                                    ),
-                                    _react2['default'].createElement('input', { id: header, type: 'text', name: 'text',
+                                    _react2['default'].createElement('input', { id: 'modal' + header, type: 'text', name: 'text',
+                                        placeholder: _bookFieldNames.bookFieldNames[header],
                                         value: _this.state[header],
                                         onChange: function (e) {
                                             _this.setState(_defineProperty({}, header, e.target.value));
@@ -21550,25 +21545,25 @@ var AddBook = (function (_React$Component) {
                                 _react2['default'].createElement(
                                     'button',
                                     { type: 'button',
-                                        className: 'btn btn-default buttonStyle',
-                                        onClick: function () {
-                                            return onDelete(_extends({}, _this.state));
-                                        } },
-                                    'Удалить'
-                                ),
-                                _react2['default'].createElement(
-                                    'button',
-                                    { type: 'button',
-                                        className: 'btn btn-default buttonStyle',
+                                        className: 'buttonStyle',
                                         onClick: function () {
                                             return onEdit(_extends({}, _this.state));
                                         } },
                                     'Сохранить'
+                                ),
+                                _react2['default'].createElement(
+                                    'button',
+                                    { type: 'button',
+                                        className: 'buttonStyle buttonDel',
+                                        onClick: function () {
+                                            return onDelete(_extends({}, _this.state));
+                                        } },
+                                    'Удалить'
                                 )
                             ) : _react2['default'].createElement(
                                 'button',
                                 { type: 'button',
-                                    className: 'btn btn-default buttonStyle',
+                                    className: 'buttonStyle',
                                     onClick: function () {
                                         return onAdd(_extends({}, _this.state));
                                     } },

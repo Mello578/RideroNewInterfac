@@ -90,7 +90,7 @@ body {
 }
 
 .bookContent {
-    margin-left: 45%;
+    padding: 0 0 0 35%;
 
 }
 
@@ -121,8 +121,8 @@ label {
 
 .modalWindow {
     background: #f2f2f2;
-    height: 40%;
-    width: 750px;
+    height: auto;
+    width: 680px;
     position: absolute;
     left: 50%;
     margin-left: -300px;
@@ -151,10 +151,6 @@ label {
     display: table;
 }
 
-#buttonDeleteBook {
-    margin-left: 182px;
-}
-
 h1 {
     margin: 0px;
     display: table-cell;
@@ -169,8 +165,18 @@ h1 {
 .photoModal{
     background: white;
     margin-right: 5%;
+    margin-bottom: 6%;
 }
 
 .modalContent{
     margin: 5%;
+}
+
+#modalauthor, #modalstyle, #modallanguage, #modalyear, #modalname {
+    margin-bottom: 1%;
+    width: 200px;
+}
+
+.buttonDel{
+    margin-left: 5%;
 }
