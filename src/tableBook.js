@@ -130,14 +130,14 @@ export class TableBook extends React.Component {
                     </div>
 
                 </div>
-                <div >
+                <div>
                     <AddBook selectedBook={this.state.selectedBook}
                              visibility={this.state.isModalWindowOpened}
                              onDelete={(book) => this.deleteBook(book)}
                              onEdit={(book) => this.editBook(book)}
                              onAdd={(book) => this.addBook(book)}
                              onCancel={() => this.hideModalWindow()}/>
-                    <div>
+                    <div className="allBooks">
                             {
                                 allBook.map((book, id) =>
                                         <div key={id} id={'book' + id} className="book"

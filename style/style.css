@@ -3,7 +3,7 @@ body {
 }
 
 .headWorkingField {
-    width: 100%;
+    width: 97%;
     margin-top: 0px;
     margin-bottom: 40px;
     padding: 35px;
@@ -60,6 +60,12 @@ body {
     border-radius: 25px;
 }
 
+.allBooks{
+    text-align: left;
+    width: 90%;
+    margin: auto;
+}
+
 .addButton {
     float: right;
 }
@@ -75,10 +81,10 @@ body {
 }
 
 .book {
-    width: 30%;
+    width: 25%;
     background: white;
     float: left;
-    margin: 1%;
+    margin: 2%;
     padding: 2%;
 }
 
