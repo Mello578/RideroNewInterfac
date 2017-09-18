@@ -5,7 +5,8 @@
     "author": "А.С. Пушкин",
     "style": "Поэма",
     "language": "Русский",
-    "year": "1820"
+    "year": "1820",
+    "photo": ""
   },
   {
     "id": "1",
@@ -13,7 +14,8 @@
     "author": "А.С. Пушкин",
     "style": "Стихотворение",
     "language": "Русский",
-    "year": "1826"
+    "year": "1826",
+    "photo": ""
   },
   {
     "id": "2",
@@ -21,7 +23,8 @@
     "author": "Н.А. Некрасов",
     "style": "Стихотворение",
     "language": "Русский",
-    "year": "1861"
+    "year": "1861",
+    "photo": ""
   },
   {
     "id": "3",
@@ -29,7 +32,8 @@
     "author": "J.R.R. Tolkien",
     "style": "Сказка",
     "language": "Английский",
-    "year": "1937"
+    "year": "1937",
+    "photo": "../img/3.png"
   },
   {
     "id": "4",
@@ -37,7 +41,8 @@
     "author": "Piers Anthony",
     "style": "Роман",
     "language": "Английский",
-    "year": "1983"
+    "year": "1983",
+    "photo": "../img/4.png"
   },
   {
     "id": "5",
@@ -45,7 +50,8 @@
     "author": "J.W. von Goethe",
     "style": "Трагедия",
     "language": "Немецкий",
-    "year": "1831"
+    "year": "1831",
+    "photo": "../img/5.png"
   },
   {
     "id": "6",
@@ -53,7 +59,8 @@
     "author": "O.F.O.W. Wilde",
     "style": "Роман",
     "language": "Английский",
-    "year": "1890"
+    "year": "1890",
+    "photo": "../img/6.png"
   }
 ]
 

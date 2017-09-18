@@ -24,6 +24,11 @@ export class TableBook extends React.Component {
         };
     }
 
+    getImage(book) {
+        return book.photo ? require(`base64-image-loader!../img/${book.id}.png`) : '';
+    }
+
+
     getLocalStorageData() {
         return JSON.parse(localStorage.getItem('book'));
     }
@@ -138,22 +143,23 @@ export class TableBook extends React.Component {
                              onAdd={(book) => this.addBook(book)}
                              onCancel={() => this.hideModalWindow()}/>
                     <div className="allBooks">
-                            {
-                                allBook.map((book, id) =>
-                                        <div key={id} id={'book' + id} className="book"
-                                             onDoubleClick={(event) => this.showModalWindow(book)}
-                                        >
-                                            <div className="photo"></div>
-                                            <div className="bookContent">
-                                                {
-                                                    bookFields.map((internal, i) =>
-                                                        <div key={i} id={internal}> {book[internal]} </div>)
-                                                }
-                                            </div>
-
-                                        </div>
-                                )
-                            }
+                        {
+                            allBook.map((book, id) =>
+                                <div key={id} id={'book' + id} className="book"
+                                     onDoubleClick={(event) => this.showModalWindow(book)}
+                                >
+                                    <div className="photo" style={{
+                                        background: 'url(' + this.getImage(book) + ')',
+                                    backgroundSize: 'cover'}}></div>
+                                    <div className="bookContent">
+                                        {
+                                            bookFields.map((internal, i) =>
+                                                <div key={i} id={internal}> {book[internal]} </div>)
+                                        }
+                                    </div>
+                                </div>
+                            )
+                        }
 
                     </div>
                 </div>

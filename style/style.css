@@ -93,6 +93,7 @@ body {
     width: 145px;
     border: 1px solid black;
     float: left;
+
 }
 
 .bookContent {
@@ -149,7 +150,7 @@ label {
 .modalHeader {
     background: white;
     height: 100px;
-    width: 100%;
+    width: 94%;
     font-family: "Noto Sans", Arial, sans-serif;
     font-size: 30px;
     margin-top: 0px;
