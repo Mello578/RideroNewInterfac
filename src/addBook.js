@@ -4,6 +4,7 @@
 
 import React from 'react';
 import {bookFieldNames} from './bookFieldNames';
+import {addBookImage} from './addBookImage';
 const headers = Object.keys(bookFieldNames);
 const DEFAULT_BOOK = {
     id: '',
@@ -11,7 +12,8 @@ const DEFAULT_BOOK = {
     author: '',
     style: '',
     language: '',
-    year: ''
+    year: '',
+    photo: ''
 };
 export class AddBook extends React.Component {
 
@@ -34,13 +36,17 @@ export class AddBook extends React.Component {
                     <div className='modalHeader'>
                         {
                             selectedBook
-                                ? <h1>Редактировать</h1>
-                                : <h1>Добавить</h1>
+                                ? <h3>Редактировать</h3>
+                                : <h3>Добавить</h3>
                         }
                         <img className='closeModal' src="../img/close.png" alt="close" onClick={onCancel}/>
                     </div>
                     <div className="modalContent">
-                        <div className="photo photoModal">
+                        <div className="photo photoModal" style={{
+                            backgroundImage: `url(${addBookImage(selectedBook)})`,
+                            backgroundSize: 'cover'
+                        }}>
+                            <div className="editPage"><img src="../img/editPhoto.png" className="editImage"/></div>
 
                         </div>
                         <div>

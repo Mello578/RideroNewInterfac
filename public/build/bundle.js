@@ -20565,7 +20565,7 @@ exports = module.exports = __webpack_require__(171)(undefined);
 
 
 // module
-exports.push([module.i, "body {\n    background: #f7f7f7;\n}\n\n.headWorkingField {\n    width: 97%;\n    margin-top: 0px;\n    margin-bottom: 40px;\n    padding: 35px;\n    display: table;\n    position: relative;\n}\n\n.headPosition {\n    position: absolute;\n    background: #ffffff;\n}\n\n.textFont {\n    font-family: \"Noto Sans\", Arial, sans-serif;\n    font-size: 34px;\n    font-weight: 100;\n    width: 300px;\n    float: left;\n    display: table-cell;\n    vertical-align: middle;\n    margin-top: 13px;\n}\n\n.filterAndButton {\n    text-align: right;\n    width: 580px;\n    margin: auto;\n    display: table-cell;\n    vertical-align: middle;\n}\n\n.filterStyle {\n    width: 250px;\n    height: 55px;\n    font-family: \"Noto Sans\", Arial, sans-serif;\n    font-size: 12px;\n    padding-left: 20px;\n    border: none;\n    border-bottom: 2px solid #aeaeae;\n    display: table-cell;\n    vertical-align: middle;\n    margin-left: 30%;\n    margin-right: 4%;\n}\n\n.buttonStyle {\n    font-size: 14px;\n    width: 200px;\n    height: 45px;\n    background: #8dd6f5;\n    font-family: \"Noto Sans\", Arial, sans-serif;\n    color: white;\n    border: none;\n    border-radius: 25px;\n}\n\n.allBooks{\n    text-align: left;\n    width: 90%;\n    margin: auto;\n}\n\n.addButton {\n    float: right;\n}\n\n.textFont {\n    font-family: \"Noto Sans\", Arial, sans-serif;\n    font-size: 34px;\n    font-weight: 600;\n}\n\n.nullDiv {\n    height: 0px;\n}\n\n.book {\n    width: 25%;\n    background: white;\n    float: left;\n    margin: 2%;\n    padding: 2%;\n}\n\n.photo {\n    height: 205px;\n    width: 145px;\n    border: 1px solid black;\n    float: left;\n}\n\n.bookContent {\n    padding: 0 0 0 35%;\n\n}\n\n#author, #style, #language, #year {\n    color: #7e7e7e;\n    font-family: \"Noto Sans\", Arial, sans-serif;\n    font-size: 14px;\n}\n\n#name {\n    font-size: 20px;\n    font-weight: 700;\n}\n\nlabel {\n    float: left;\n    padding-right: 10px;\n}\n\n.blackout {\n    height: 100%;\n    width: 100%;\n    background: black;\n    opacity: 0.8;\n    position: absolute;\n    z-index: 15;\n}\n\n.modalWindow {\n    background: #f2f2f2;\n    height: auto;\n    width: 680px;\n    position: absolute;\n    left: 50%;\n    margin-left: -300px;\n    z-index: 100;\n    opacity: 1;\n    border-radius: 5px;\n    padding: 0;\n}\n\n.modalNoVisible {\n    display: none;\n}\n\n.modalVisible {\n    display: block;\n}\n\n.modalHeader {\n    background: white;\n    height: 100px;\n    width: 94%;\n    font-family: \"Noto Sans\", Arial, sans-serif;\n    font-size: 30px;\n    margin-top: 0px;\n    padding: 20px;\n    display: table;\n}\n\nh1 {\n    margin: 0px;\n    display: table-cell;\n    vertical-align: middle;\n}\n\n.closeModal {\n    float: right;\n    margin: 10px;\n}\n\n.photoModal{\n    background: white;\n    margin-right: 5%;\n    margin-bottom: 6%;\n}\n\n.modalContent{\n    margin: 5%;\n}\n\n#modalauthor, #modalstyle, #modallanguage, #modalyear, #modalname {\n    margin-bottom: 1%;\n    width: 200px;\n}\n\n.buttonDel{\n    margin-left: 5%;\n}", ""]);
+exports.push([module.i, "body {\n    background: #f7f7f7;\n}\n\n.headWorkingField {\n    width: 97%;\n    margin-top: 0px;\n    margin-bottom: 40px;\n    padding: 35px;\n    display: table;\n    position: relative;\n}\n\n.headPosition {\n    position: absolute;\n    background: #ffffff;\n}\n\n.textFont {\n    font-family: \"Noto Sans\", Arial, sans-serif;\n    font-size: 34px;\n    font-weight: 100;\n    width: 300px;\n    float: left;\n    display: table-cell;\n    vertical-align: middle;\n    margin-top: 13px;\n}\n\n.filterAndButton {\n    text-align: right;\n    width: 580px;\n    margin: auto;\n    display: table-cell;\n    vertical-align: middle;\n}\n\n.filterStyle {\n    width: 250px;\n    height: 55px;\n    font-family: \"Noto Sans\", Arial, sans-serif;\n    font-size: 12px;\n    padding-left: 20px;\n    border: none;\n    border-bottom: 2px solid #aeaeae;\n    display: table-cell;\n    vertical-align: middle;\n    margin-left: 30%;\n    margin-right: 4%;\n}\n\n.buttonStyle {\n    font-size: 14px;\n    width: 200px;\n    height: 45px;\n    background: #8dd6f5;\n    font-family: \"Noto Sans\", Arial, sans-serif;\n    color: white;\n    border: none;\n    border-radius: 25px;\n}\n\n.allBooks{\n    text-align: left;\n    width: 90%;\n    margin: auto;\n}\n\n.addButton {\n    float: right;\n}\n\n.textFont {\n    font-family: \"Noto Sans\", Arial, sans-serif;\n    font-size: 34px;\n    font-weight: 600;\n}\n\n.nullDiv {\n    height: 0px;\n}\n\n.book {\n    width: 25%;\n    background: white;\n    float: left;\n    margin: 2%;\n    padding: 2%;\n}\n\n.photo {\n    height: 205px;\n    width: 145px;\n    border: 1px solid black;\n    float: left;\n}\n\n.bookContent {\n    padding: 0 0 0 35%;\n\n}\n\n#author, #style, #language, #year {\n    color: #7e7e7e;\n    font-family: \"Noto Sans\", Arial, sans-serif;\n    font-size: 14px;\n}\n\n#name {\n    font-size: 20px;\n    font-weight: 700;\n}\n\nlabel {\n    float: left;\n    padding-right: 10px;\n}\n\n.blackout {\n    height: 150%;\n    width: 100%;\n    background: black;\n    opacity: 0.8;\n    position: absolute;\n    z-index: 15;\n}\n\n.modalWindow {\n    background: #f2f2f2;\n    height: auto;\n    width: 680px;\n    position: absolute;\n    left: 50%;\n    margin-left: -300px;\n    z-index: 100;\n    opacity: 1;\n    border-radius: 5px;\n    padding: 0;\n}\n\n.modalNoVisible {\n    display: none;\n}\n\n.modalVisible {\n    display: block;\n}\n\n.modalHeader {\n    background: white;\n    height: 60px;\n    width: 94%;\n    font-family: \"Noto Sans\", Arial, sans-serif;\n    font-size: 30px;\n    margin-top: 0px;\n    padding: 20px;\n    display: table;\n}\n\nh3 {\n    margin: 0px;\n    display: table-cell;\n    vertical-align: middle;\n}\n\n.closeModal {\n    float: right;\n    margin: 10px;\n}\n\n.photoModal{\n    background: white;\n    margin-right: 5%;\n    margin-bottom: 6%;\n}\n\n.modalContent{\n    margin: 5%;\n}\n\n#modalauthor, #modalstyle, #modallanguage, #modalyear, #modalname {\n    margin-bottom: 1.8%;\n    width: 200px;\n}\n\n.buttonDel{\n    margin-left: 5%;\n}\n\n.editPage{\n    width: 30px;\n    height:30px;\n    opacity: 0.3;\n    border-radius: 5px;\n    float: right;\n    background: white;\n}\n.editPage:hover{\n    opacity: 0.7;\n}\n\n.editImage {\n    display: block;\n    margin: 5px auto;\n    width: 65%;\n    height: auto;\n}\n\n", ""]);
 
 // exports
 
@@ -21143,6 +21143,8 @@ var _addBook = __webpack_require__(175);
 
 var _bookFieldNames = __webpack_require__(85);
 
+var _addBookImage = __webpack_require__(183);
+
 var TableBook = (function (_React$Component) {
     _inherits(TableBook, _React$Component);
 
@@ -21160,11 +21162,6 @@ var TableBook = (function (_React$Component) {
     }
 
     _createClass(TableBook, [{
-        key: 'getImageAdds',
-        value: function getImageAdds(book) {
-            return book.photo ? __webpack_require__(176)("./" + book.photo) : '';
-        }
-    }, {
         key: 'getLocalStorageData',
         value: function getLocalStorageData() {
             return JSON.parse(localStorage.getItem('book'));
@@ -21320,7 +21317,7 @@ var TableBook = (function (_React$Component) {
                                 },
                                 _react2['default'].createElement('div', { className: 'photo', id: 'book' + book.id,
                                     style: {
-                                        backgroundImage: 'url(' + _this2.getImageAdds(book) + ')',
+                                        backgroundImage: 'url(' + (0, _addBookImage.addBookImage)(book) + ')',
                                         backgroundSize: 'cover'
                                     }
                                 }),
@@ -21386,6 +21383,8 @@ var _react2 = _interopRequireDefault(_react);
 
 var _bookFieldNames = __webpack_require__(85);
 
+var _addBookImage = __webpack_require__(183);
+
 var headers = Object.keys(_bookFieldNames.bookFieldNames);
 var DEFAULT_BOOK = {
     id: '',
@@ -21393,7 +21392,8 @@ var DEFAULT_BOOK = {
     author: '',
     style: '',
     language: '',
-    year: ''
+    year: '',
+    photo: ''
 };
 
 var AddBook = (function (_React$Component) {
@@ -21436,11 +21436,11 @@ var AddBook = (function (_React$Component) {
                         'div',
                         { className: 'modalHeader' },
                         selectedBook ? _react2['default'].createElement(
-                            'h1',
+                            'h3',
                             null,
                             'Редактировать'
                         ) : _react2['default'].createElement(
-                            'h1',
+                            'h3',
                             null,
                             'Добавить'
                         ),
@@ -21449,7 +21449,18 @@ var AddBook = (function (_React$Component) {
                     _react2['default'].createElement(
                         'div',
                         { className: 'modalContent' },
-                        _react2['default'].createElement('div', { className: 'photo photoModal' }),
+                        _react2['default'].createElement(
+                            'div',
+                            { className: 'photo photoModal', style: {
+                                    backgroundImage: 'url(' + (0, _addBookImage.addBookImage)(selectedBook) + ')',
+                                    backgroundSize: 'cover'
+                                } },
+                            _react2['default'].createElement(
+                                'div',
+                                { className: 'editPage' },
+                                _react2['default'].createElement('img', { src: '../img/editPhoto.png', className: 'editImage' })
+                            )
+                        ),
                         _react2['default'].createElement(
                             'div',
                             null,
@@ -21521,7 +21532,8 @@ var map = {
 	"./4.png": 178,
 	"./5.png": 179,
 	"./6.png": 180,
-	"./close.png": 181
+	"./close.png": 181,
+	"./editPhoto.png": 184
 };
 function webpackContext(req) {
 	return __webpack_require__(webpackContextResolve(req));
@@ -21615,6 +21627,32 @@ function dataDownload(data) {
 }
 
 module.exports = dataDownload;
+
+/***/ }),
+/* 183 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+/**
+ * Created by Mello on 20.09.2017.
+ */
+
+
+
+Object.defineProperty(exports, '__esModule', {
+  value: true
+});
+var addBookImage = function addBookImage(book) {
+
+  return book ? book.photo ? __webpack_require__(176)("./" + book.photo) : '' : '';
+};
+exports.addBookImage = addBookImage;
+
+/***/ }),
+/* 184 */
+/***/ (function(module, exports) {
+
+module.exports = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAAaCAYAAACpSkzOAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAIGNIUk0AAHolAACAgwAA+f8AAIDoAABSCAABFVgAADqXAAAXb9daH5AAAARySURBVHjarNXdL1xpHAfwr12ajpeoGWMOQsVUdkUieyHZCxdN071p/wESabjoBReViEQab/EaREwwaoTIaBxCMobMyKAxDXpMR+3Mjpkc4xxjzmIpI4YljSXk2Ytlq62XafXie/v7PC+/3/MgKysL/f392NvbgyAIWFpaAs/zYFkWFosFk5OTMBgM6OvrQ0dHBxQKBcrLy5Gfn4+CggLQNA21Wg2NRoOxsTE8evSolaKotezs7Aft7e3Iz8+HUqkEbgqp1WpotVoYDAakpqZ2AyBnycnJedjU1PR9oIGBAXR1dUliYmJM55GzZGRkPNTpdN8OPXv2DFVVVfB4PLBYLJRIJNq/CAJASktLH3wTVFpaisrKSmRmZt4zm80xhBDwPB8cGxtrvQz7aqi+vh4tLS0oKiqSAjikKGrH6XQGEUKwuroKuVw+/jkSFxc381VQW1sbaJpGfX29/507d/48KxQZGWkXBAGEELjdbkRHR/9+DtrU6XS3fIZomoZer0dzc7OEoqg/Pl91fHz8+OrqKgghcDqdgRKJZBsAoWn6593dXd+aQafT4c2bN+js7BSHhYUJl92DXC5/63K5AgkhGB4evldTU/Pb0dERFhcXr4eMRiMcDgc0Gk2YWCx2X3rZpwkNDd1mGCbB6/Xi3bt34DgOPM9fDc3MzGB5eRmvXr0KlUqlruuQ0/yjUql+Gh0dxdDQENxu99WQzWaD1+uF2WwOkclkvC+ITCZzqFQqidFohFqtvh5iWRYHBwdwOp23o6KiFnxBKIqyqFSqHwcGBtDT04Pe3t6rIY7jcHx8jPX1dSQkJLz1BQkJCVkpKysLUqvVUCqV6O/v/xJ68uQJBgcHQQiB1+sFIQQLCwu3Y2NjLb4gQUFBf+Xm5kY0NDSgtrYWra2tF0NPnz5FV1cXnE4nBEGAyWS6JRaL7b4gAQEBa2lpaVRxcTGeP3+Ouro6vHjxAn19fejp6fkUKikpQXZ2NlJSUnD//n25n5+fzcfuep+amhqZnp6OrKws5OXloaKiAgqFAt3d3Xj58uWnUG5uLhobG6HRaJCcnNzuC+Lv77+h1WqjrVYrxsbGMDExAYZhYDabMTs7C4fDAZPJBJ1Oh8XFxY/NMDU1BUIIlpeXZUlJSZNXIRERESzDMBQhBB8+fMD+/j52dnawvb2Nra0tbG5uYmtrCxzHQa/XfxzYgoICpKSk9E5NTcUTQrCxsQGKomyXTP17nueDCCFwuVxYWlqC2+3+IisrK7Db7dDr9eB5/j8oMTFRD4BERUVxDocjkBACs9kcHB4ePnceEYlEXoZh4k5OTsCyLARBuBC5FDpfTCKRsFarVUQIAcdxPyQnJ08CIMHBwX+PjIzEHx4ewm63g+O4b4L2zmNSqZQ9e4E5jsPjx49phULx6+mXjfn5+e8DnR4ja7FY5IQQeDweGI1GTExMYG5u7kbQhd119+7dGYPB4KfVajE+Pg6GYW4MrZ3u6v/IZDJbYWHhL9XV1VAqlXj9+jWmp6dvBP07AEBT8TA06h6DAAAAAElFTkSuQmCC"
 
 /***/ })
 /******/ ]);

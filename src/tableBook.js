@@ -9,7 +9,7 @@
 import React from "react";
 import {AddBook} from './addBook';
 import {bookFieldNames} from './bookFieldNames';
-
+import {addBookImage} from './addBookImage';
 
 export class TableBook extends React.Component {
 
@@ -23,11 +23,6 @@ export class TableBook extends React.Component {
             books: JSON.parse(localStorage.getItem('book'))
         };
     }
-
-    getImageAdds(book) {
-        return book.photo ? require(`../img/${book.photo}`) : '';
-    }
-
 
     getLocalStorageData() {
         return JSON.parse(localStorage.getItem('book'));
@@ -44,6 +39,7 @@ export class TableBook extends React.Component {
             selectedBook
         });
     }
+
 
     deleteBook(book) {
         let books = this.state.books.filter((item) => {
@@ -150,7 +146,7 @@ export class TableBook extends React.Component {
 
                                     <div className="photo" id={'book' + book.id}
                                          style={{
-                                             backgroundImage: `url(${this.getImageAdds(book)})`,
+                                             backgroundImage: `url(${addBookImage(book)})`,
                                              backgroundSize: 'cover'
                                          }}
                                     >
