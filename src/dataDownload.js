@@ -6,6 +6,22 @@ let localStorageData = (item) => {
     return JSON.parse(localStorage.getItem(item));
 };
 
+let setImageBook = (item) => {
+    let imageArray = JSON.parse(item);
+    let bookImageAndId = [];
+    for(let i = 0; i < imageArray.length; i++){
+       let book = {
+            id: imageArray[i].id,
+            imageSrc: imageArray[i].photo ? require(`../img/${imageArray[i].photo}`) : ''
+
+        };
+        bookImageAndId.push(book);
+        debugger
+    }
+
+    localStorage.setItem('bookImage', JSON.stringify(bookImageAndId));
+};
+
 function dataDownload(data) {
     if (!localStorage.getItem(data)) {
         let xhr = new XMLHttpRequest();
@@ -21,6 +37,9 @@ function dataDownload(data) {
             xhr.send(null);
         }).then((text) => {
             localStorage.setItem(data, text);
+
+            setImageBook(text);
+
             return localStorageData(data);
         }, error => {
             alert('Ошибка загрузки списка ' + data + '. Код ошибки - ' + error);

@@ -2,9 +2,21 @@
  * Created by Mello on 20.09.2017.
  */
 
-export const addBookImage = (book) => {
 
-    return book
-        ? book.photo ? require(`../img/${book.photo}`) : ''
-        : '';
+const allBook = JSON.parse(localStorage.getItem('bookImage'));
+export const addBookImage = (book) => {
+    let a;
+    if(book){
+        a = allBook.find((item)=>{
+            return item.id === book.id
+        });
+    }else{
+        return 'qqqq'
+    }
+
+    return a.imageSrc;
 };
+
+
+
+
