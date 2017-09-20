@@ -10,6 +10,7 @@
   "license": "ISC",
   "dependencies": {
     "base64-image-loader": "^1.2.0",
+    "base64-inline-loader": "^1.1.0",
     "bootstrap": "^3.3.7",
     "bootstrap-loader": "^2.1.0",
     "css-loader": "^0.28.4",

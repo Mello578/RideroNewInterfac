@@ -24,8 +24,8 @@ export class TableBook extends React.Component {
         };
     }
 
-    getImage(book) {
-        return book.photo ? require(`base64-image-loader!../img/${book.id}.png`) : '';
+    getImageAdds(book) {
+        return book.photo ? require(`../img/${book.photo}`) : '';
     }
 
 
@@ -114,7 +114,6 @@ export class TableBook extends React.Component {
 
     render() {
         const bookFields = Object.keys(bookFieldNames);
-        const headers = bookFields.map((fieldName) => bookFieldNames[fieldName]);
         let allBook = this.getFilteredTable();
 
         return (
@@ -148,9 +147,16 @@ export class TableBook extends React.Component {
                                 <div key={id} id={'book' + id} className="book"
                                      onDoubleClick={(event) => this.showModalWindow(book)}
                                 >
-                                    <div className="photo" style={{
-                                        background: 'url(' + this.getImage(book) + ')',
-                                    backgroundSize: 'cover'}}></div>
+
+                                    <div className="photo" id={'book' + book.id}
+                                         style={{
+                                             backgroundImage: `url(${this.getImageAdds(book)})`,
+                                             backgroundSize: 'cover'
+                                         }}
+                                    >
+                                        {/*<img src={this.getImageAdds(book)} alt="No photo" />*/}
+                                    </div>
+
                                     <div className="bookContent">
                                         {
                                             bookFields.map((internal, i) =>

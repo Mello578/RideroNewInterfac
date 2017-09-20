@@ -33,7 +33,7 @@
     "style": "Сказка",
     "language": "Английский",
     "year": "1937",
-    "photo": "../img/3.png"
+    "photo": "3.png"
   },
   {
     "id": "4",
@@ -42,7 +42,7 @@
     "style": "Роман",
     "language": "Английский",
     "year": "1983",
-    "photo": "../img/4.png"
+    "photo": "4.png"
   },
   {
     "id": "5",
@@ -51,7 +51,7 @@
     "style": "Трагедия",
     "language": "Немецкий",
     "year": "1831",
-    "photo": "../img/5.png"
+    "photo": "5.png"
   },
   {
     "id": "6",
@@ -60,7 +60,7 @@
     "style": "Роман",
     "language": "Английский",
     "year": "1890",
-    "photo": "../img/6.png"
+    "photo": "6.png"
   }
 ]
 

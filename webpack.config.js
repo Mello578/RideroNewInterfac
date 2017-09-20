@@ -32,12 +32,16 @@ module.exports = {
                 loader: 'imports?jQuery=jquery'
             },
             {
-                test: /\.(woff|woff2|eot|ttf|svg)$/,
-                loader: "url-loader"
+                test: /\.(woff|woff2|eot|ttf)$/,
+               loader: "url-loader"
+
             },
             {
-                test: /\.png$/,
-                loader: "url-loader?mimetype=image/png" }
+                test: /\.(jpe?g|png|gif|svg)$/i,
+                loaders:
+                    'base64-image-loader'
+            }
+
         ]
     },
     watch: true
