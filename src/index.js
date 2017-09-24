@@ -6,14 +6,11 @@ import {dataDownload} from './dataDownload';
 
 
 class App extends React.Component {
-
-
     refreshFilterString(event) {
         this.setState({filterEvent: event});
     }
 
     render() {
-
         return (
             <div>
                 <div className="headWorkingField headPosition">
@@ -27,11 +24,9 @@ class App extends React.Component {
     }
 }
 
-
 (() => {
     dataDownload('book')
         .then((allBook) => {
-        debugger;
             render(<App allBook={allBook}/>,
                 document.getElementById('content'));
         });

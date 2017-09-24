@@ -2,28 +2,17 @@
  * Created by Mello on 20.09.2017.
  */
 
-
-//const allBook = JSON.parse(localStorage.getItem('bookImage'));
-
-// let allBook = () =>{
-//     const books = JSON.parse(localStorage.getItem('bookImage'));
-//   return books ? books : allBook();
-// };
-
-
 export const addBookImage = (book) => {
     const noPhoto = JSON.parse(localStorage.getItem('bookNoImage'));
     const allBook = JSON.parse(localStorage.getItem('bookImage'));
     let bookImage;
-    if(book && book.photo){
-        bookImage = allBook.find((item)=>{
+    if (book && book.photo) {
+        bookImage = allBook.find((item) => {
             return item.id === book.id
         });
-    }else {
+    } else {
         bookImage = noPhoto;
     }
-
-    debugger
     return bookImage.photo;
 };
 

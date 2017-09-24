@@ -26,10 +26,8 @@ export class AddBook extends React.Component {
         this.setState(selectedBook ? selectedBook : DEFAULT_BOOK);
     }
 
-
     render() {
         const {selectedBook, visibility, onDelete, onEdit, onAdd, onCancel} = this.props;
-
         return (
             <div>
                 <div className={`modalWindow ${visibility ? 'modalVisible' : 'modalNoVisible'}`}>
@@ -47,7 +45,6 @@ export class AddBook extends React.Component {
                             backgroundSize: 'cover'
                         }}>
                             <div className="editPage"><img src="../img/editPhoto.png" className="editImage"/></div>
-
                         </div>
                         <div>
                             {
@@ -84,7 +81,6 @@ export class AddBook extends React.Component {
                                               onClick={() => onAdd({...this.state})}>Добавить
                                 </button>
                             }
-
                         </div>
                     </div>
 

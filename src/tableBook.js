@@ -10,7 +10,6 @@ import React from "react";
 import {AddBook} from './addBook';
 import {bookFieldNames} from './bookFieldNames';
 import {addBookImage} from './addBookImage';
-
 export class TableBook extends React.Component {
 
     constructor() {
@@ -39,7 +38,6 @@ export class TableBook extends React.Component {
             selectedBook
         });
     }
-
 
     deleteBook(book) {
         let books = this.state.books.filter((item) => {
@@ -76,7 +74,6 @@ export class TableBook extends React.Component {
         } else {
             alert('Поля \'Книга\' и \'Автор\' - обязательны к заполнению');
         }
-
     }
 
     hideModalWindow() {
@@ -99,14 +96,12 @@ export class TableBook extends React.Component {
                         return true;
                     }
                 }
-
                 return false;
             });
         } else {
             return this.state.books;
         }
     }
-
 
     render() {
         const bookFields = Object.keys(bookFieldNames);
@@ -121,14 +116,12 @@ export class TableBook extends React.Component {
                         <input type='text' placeholder='Поиск'
                                className='filterStyle'
                                onChange={(event) => this.refreshFilterString(event)}/>
-
                         <button type='button'
                                 className='buttonStyle addButton'
                                 onClick={() => this.showModalWindow(null)}>
                             Добавить книгу
                         </button>
                     </div>
-
                 </div>
                 <div>
                     <AddBook selectedBook={this.state.selectedBook}
@@ -143,14 +136,12 @@ export class TableBook extends React.Component {
                                 <div key={id} id={'book' + id} className="book"
                                      onDoubleClick={(event) => this.showModalWindow(book)}
                                 >
-
                                     <div className="photo" id={'book' + book.id}
                                          style={{
                                              backgroundImage: `url(${addBookImage(book)})`,
                                              backgroundSize: 'cover'
                                          }}
                                     >
-                                        {/*<img src={this.getImageAdds(book)} alt="No photo" />*/}
                                     </div>
 
                                     <div className="bookContent">
@@ -162,12 +153,9 @@ export class TableBook extends React.Component {
                                 </div>
                             )
                         }
-
                     </div>
                 </div>
             </div>
-
-
         )
     }
 }

@@ -1,5 +1,7 @@
 body {
     background: #f7f7f7;
+    font-family: "Noto Sans", Arial, sans-serif;
+
 }
 
 .headWorkingField {
@@ -17,7 +19,6 @@ body {
 }
 
 .textFont {
-    font-family: "Noto Sans", Arial, sans-serif;
     font-size: 34px;
     font-weight: 100;
     width: 300px;
@@ -38,7 +39,6 @@ body {
 .filterStyle {
     width: 250px;
     height: 55px;
-    font-family: "Noto Sans", Arial, sans-serif;
     font-size: 12px;
     padding-left: 20px;
     border: none;
@@ -54,7 +54,6 @@ body {
     width: 200px;
     height: 45px;
     background: #8dd6f5;
-    font-family: "Noto Sans", Arial, sans-serif;
     color: white;
     border: none;
     border-radius: 25px;
@@ -64,6 +63,9 @@ body {
     text-align: left;
     width: 90%;
     margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
 
 .addButton {
@@ -71,7 +73,6 @@ body {
 }
 
 .textFont {
-    font-family: "Noto Sans", Arial, sans-serif;
     font-size: 34px;
     font-weight: 600;
 }
@@ -86,6 +87,7 @@ body {
     float: left;
     margin: 2%;
     padding: 2%;
+    min-width: 300px;
 }
 
 .photo {
@@ -96,14 +98,11 @@ body {
 }
 
 .bookContent {
-    padding: 0 0 0 10%;
-    margin-left: 37%;
-
+    margin-left: 55%;
 }
 
 #author, #style, #language, #year {
     color: #7e7e7e;
-    font-family: "Noto Sans", Arial, sans-serif;
     font-size: 14px;
 }
 
@@ -151,7 +150,7 @@ label {
     background: white;
     height: 60px;
     width: 94%;
-    font-family: "Noto Sans", Arial, sans-serif;
+
     font-size: 30px;
     margin-top: 0px;
     padding: 20px;
