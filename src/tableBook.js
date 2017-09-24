@@ -135,7 +135,7 @@ export class TableBook extends React.Component {
                         {
                             allBook.map((book, id) =>
                                 <div key={id} id={'book' + id} className="book"
-                                     onDoubleClick={(event) => this.showModalWindow(book)}
+                                     onClick={(event) => this.showModalWindow(book)}
                                 >
                                     <div className="photo" id={'book' + book.id}
                                          style={{

@@ -21339,7 +21339,7 @@ var TableBook = (function (_React$Component) {
                             return _react2['default'].createElement(
                                 'div',
                                 { key: id, id: 'book' + id, className: 'book',
-                                    onDoubleClick: function (event) {
+                                    onClick: function (event) {
                                         return _this2.showModalWindow(book);
                                     }
                                 },
