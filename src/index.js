@@ -2,12 +2,13 @@ import React from "react";
 import {render} from "react-dom";
 import '..//style/style.css';
 import {TableBook} from './tableBook';
+import {dataDownload} from './dataDownload';
 
 
 class App extends React.Component {
 
 
-    refreshFilterString(event){
+    refreshFilterString(event) {
         this.setState({filterEvent: event});
     }
 
@@ -28,24 +29,10 @@ class App extends React.Component {
 
 
 (() => {
-
-        const dataDownload = require('./dataDownload');
-
-   const allBook = dataDownload('book');
-   debugger
-        render(<App allBook={allBook}/>,
-            document.getElementById('content'));
-
+    dataDownload('book')
+        .then((allBook) => {
+        debugger;
+            render(<App allBook={allBook}/>,
+                document.getElementById('content'));
+        });
 })();
-
-
-
-// (() => {
-//     new Promise((resolve) => {
-//         const dataDownload = require('./dataDownload');
-//         resolve(dataDownload('book'));
-//     }).then((allBook) => {
-//         render(<App allBook={allBook}/>,
-//             document.getElementById('content'));
-//     });
-// })();

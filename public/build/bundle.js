@@ -10365,11 +10365,19 @@ Object.defineProperty(exports, '__esModule', {
     value: true
 });
 var addBookImage = function addBookImage(book) {
-    var a = undefined;
+    var noPhoto = JSON.parse(localStorage.getItem('bookNoImage'));
+    var allBook = JSON.parse(localStorage.getItem('bookImage'));
+    var bookImage = undefined;
+    if (book && book.photo) {
+        bookImage = allBook.find(function (item) {
+            return item.id === book.id;
+        });
+    } else {
+        bookImage = noPhoto;
+    }
 
-    a = book && book.photo ? book : JSON.parse(localStorage.getItem('bookNoImage'));
-
-    return a.imageSrc;
+    debugger;
+    return bookImage.photo;
 };
 exports.addBookImage = addBookImage;
 
@@ -10405,6 +10413,8 @@ var _reactDom = __webpack_require__(95);
 __webpack_require__(171);
 
 var _tableBook = __webpack_require__(176);
+
+var _dataDownload = __webpack_require__(178);
 
 var App = (function (_React$Component) {
     _inherits(App, _React$Component);
@@ -10447,23 +10457,11 @@ var App = (function (_React$Component) {
 })(_react2["default"].Component);
 
 (function () {
-
-    var dataDownload = __webpack_require__(178);
-
-    var allBook = dataDownload('book');
-    debugger;
-    (0, _reactDom.render)(_react2["default"].createElement(App, { allBook: allBook }), document.getElementById('content'));
+    (0, _dataDownload.dataDownload)('book').then(function (allBook) {
+        debugger;
+        (0, _reactDom.render)(_react2["default"].createElement(App, { allBook: allBook }), document.getElementById('content'));
+    });
 })();
-
-// (() => {
-//     new Promise((resolve) => {
-//         const dataDownload = require('./dataDownload');
-//         resolve(dataDownload('book'));
-//     }).then((allBook) => {
-//         render(<App allBook={allBook}/>,
-//             document.getElementById('content'));
-//     });
-// })();
 
 /***/ }),
 /* 89 */
@@ -20611,7 +20609,7 @@ exports = module.exports = __webpack_require__(173)(undefined);
 
 
 // module
-exports.push([module.i, "body {\n    background: #f7f7f7;\n}\n\n.headWorkingField {\n    width: 97%;\n    margin-top: 0px;\n    margin-bottom: 40px;\n    padding: 35px;\n    display: table;\n    position: relative;\n}\n\n.headPosition {\n    position: absolute;\n    background: #ffffff;\n}\n\n.textFont {\n    font-family: \"Noto Sans\", Arial, sans-serif;\n    font-size: 34px;\n    font-weight: 100;\n    width: 300px;\n    float: left;\n    display: table-cell;\n    vertical-align: middle;\n    margin-top: 13px;\n}\n\n.filterAndButton {\n    text-align: right;\n    width: 580px;\n    margin: auto;\n    display: table-cell;\n    vertical-align: middle;\n}\n\n.filterStyle {\n    width: 250px;\n    height: 55px;\n    font-family: \"Noto Sans\", Arial, sans-serif;\n    font-size: 12px;\n    padding-left: 20px;\n    border: none;\n    border-bottom: 2px solid #aeaeae;\n    display: table-cell;\n    vertical-align: middle;\n    margin-left: 30%;\n    margin-right: 4%;\n}\n\n.buttonStyle {\n    font-size: 14px;\n    width: 200px;\n    height: 45px;\n    background: #8dd6f5;\n    font-family: \"Noto Sans\", Arial, sans-serif;\n    color: white;\n    border: none;\n    border-radius: 25px;\n}\n\n.allBooks{\n    text-align: left;\n    width: 90%;\n    margin: auto;\n}\n\n.addButton {\n    float: right;\n}\n\n.textFont {\n    font-family: \"Noto Sans\", Arial, sans-serif;\n    font-size: 34px;\n    font-weight: 600;\n}\n\n.nullDiv {\n    height: 0px;\n}\n\n.book {\n    width: 25%;\n    background: white;\n    float: left;\n    margin: 2%;\n    padding: 2%;\n}\n\n.photo {\n    height: 205px;\n    width: 145px;\n    border: 1px solid black;\n    float: left;\n}\n\n.bookContent {\n    padding: 0 0 0 10%;\n    margin-left: 37%;\n\n}\n\n#author, #style, #language, #year {\n    color: #7e7e7e;\n    font-family: \"Noto Sans\", Arial, sans-serif;\n    font-size: 14px;\n}\n\n#name {\n    font-size: 20px;\n    font-weight: 700;\n}\n\nlabel {\n    float: left;\n    padding-right: 10px;\n}\n\n.blackout {\n    height: 150%;\n    width: 100%;\n    background: black;\n    opacity: 0.8;\n    position: absolute;\n    z-index: 15;\n}\n\n.modalWindow {\n    background: #f2f2f2;\n    height: auto;\n    width: 680px;\n    position: absolute;\n    left: 50%;\n    margin-left: -300px;\n    z-index: 100;\n    opacity: 1;\n    border-radius: 5px;\n    padding: 0;\n}\n\n.modalNoVisible {\n    display: none;\n}\n\n.modalVisible {\n    display: block;\n}\n\n.modalHeader {\n    background: white;\n    height: 60px;\n    width: 94%;\n    font-family: \"Noto Sans\", Arial, sans-serif;\n    font-size: 30px;\n    margin-top: 0px;\n    padding: 20px;\n    display: table;\n}\n\nh3 {\n    margin: 0px;\n    display: table-cell;\n    vertical-align: middle;\n}\n\n.closeModal {\n    float: right;\n    margin: 10px;\n}\n\n.photoModal{\n    background: white;\n    margin-right: 5%;\n    margin-bottom: 6%;\n}\n\n.modalContent{\n    margin: 5%;\n}\n\n#modalauthor, #modalstyle, #modallanguage, #modalyear, #modalname {\n    margin-bottom: 1.8%;\n    width: 200px;\n}\n\n.buttonDel{\n    margin-left: 5%;\n}\n\n.editPage{\n    width: 30px;\n    height:30px;\n    opacity: 0.3;\n    border-radius: 5px;\n    float: right;\n    background: white;\n}\n.editPage:hover{\n    opacity: 0.7;\n}\n\n.editImage {\n    display: block;\n    margin: 5px auto;\n    width: 65%;\n    height: auto;\n}\n\n", ""]);
+exports.push([module.i, "body {\r\n    background: #f7f7f7;\r\n}\r\n\r\n.headWorkingField {\r\n    width: 97%;\r\n    margin-top: 0px;\r\n    margin-bottom: 40px;\r\n    padding: 35px;\r\n    display: table;\r\n    position: relative;\r\n}\r\n\r\n.headPosition {\r\n    position: absolute;\r\n    background: #ffffff;\r\n}\r\n\r\n.textFont {\r\n    font-family: \"Noto Sans\", Arial, sans-serif;\r\n    font-size: 34px;\r\n    font-weight: 100;\r\n    width: 300px;\r\n    float: left;\r\n    display: table-cell;\r\n    vertical-align: middle;\r\n    margin-top: 13px;\r\n}\r\n\r\n.filterAndButton {\r\n    text-align: right;\r\n    width: 580px;\r\n    margin: auto;\r\n    display: table-cell;\r\n    vertical-align: middle;\r\n}\r\n\r\n.filterStyle {\r\n    width: 250px;\r\n    height: 55px;\r\n    font-family: \"Noto Sans\", Arial, sans-serif;\r\n    font-size: 12px;\r\n    padding-left: 20px;\r\n    border: none;\r\n    border-bottom: 2px solid #aeaeae;\r\n    display: table-cell;\r\n    vertical-align: middle;\r\n    margin-left: 30%;\r\n    margin-right: 4%;\r\n}\r\n\r\n.buttonStyle {\r\n    font-size: 14px;\r\n    width: 200px;\r\n    height: 45px;\r\n    background: #8dd6f5;\r\n    font-family: \"Noto Sans\", Arial, sans-serif;\r\n    color: white;\r\n    border: none;\r\n    border-radius: 25px;\r\n}\r\n\r\n.allBooks{\r\n    text-align: left;\r\n    width: 90%;\r\n    margin: auto;\r\n}\r\n\r\n.addButton {\r\n    float: right;\r\n}\r\n\r\n.textFont {\r\n    font-family: \"Noto Sans\", Arial, sans-serif;\r\n    font-size: 34px;\r\n    font-weight: 600;\r\n}\r\n\r\n.nullDiv {\r\n    height: 0px;\r\n}\r\n\r\n.book {\r\n    width: 25%;\r\n    background: white;\r\n    float: left;\r\n    margin: 2%;\r\n    padding: 2%;\r\n}\r\n\r\n.photo {\r\n    height: 205px;\r\n    width: 145px;\r\n    border: 1px solid black;\r\n    float: left;\r\n}\r\n\r\n.bookContent {\r\n    padding: 0 0 0 10%;\r\n    margin-left: 37%;\r\n\r\n}\r\n\r\n#author, #style, #language, #year {\r\n    color: #7e7e7e;\r\n    font-family: \"Noto Sans\", Arial, sans-serif;\r\n    font-size: 14px;\r\n}\r\n\r\n#name {\r\n    font-size: 20px;\r\n    font-weight: 700;\r\n}\r\n\r\nlabel {\r\n    float: left;\r\n    padding-right: 10px;\r\n}\r\n\r\n.blackout {\r\n    height: 150%;\r\n    width: 100%;\r\n    background: black;\r\n    opacity: 0.8;\r\n    position: absolute;\r\n    z-index: 15;\r\n}\r\n\r\n.modalWindow {\r\n    background: #f2f2f2;\r\n    height: auto;\r\n    width: 680px;\r\n    position: absolute;\r\n    left: 50%;\r\n    margin-left: -300px;\r\n    z-index: 100;\r\n    opacity: 1;\r\n    border-radius: 5px;\r\n    padding: 0;\r\n}\r\n\r\n.modalNoVisible {\r\n    display: none;\r\n}\r\n\r\n.modalVisible {\r\n    display: block;\r\n}\r\n\r\n.modalHeader {\r\n    background: white;\r\n    height: 60px;\r\n    width: 94%;\r\n    font-family: \"Noto Sans\", Arial, sans-serif;\r\n    font-size: 30px;\r\n    margin-top: 0px;\r\n    padding: 20px;\r\n    display: table;\r\n}\r\n\r\nh3 {\r\n    margin: 0px;\r\n    display: table-cell;\r\n    vertical-align: middle;\r\n}\r\n\r\n.closeModal {\r\n    float: right;\r\n    margin: 10px;\r\n}\r\n\r\n.photoModal{\r\n    background: white;\r\n    margin-right: 5%;\r\n    margin-bottom: 6%;\r\n}\r\n\r\n.modalContent{\r\n    margin: 5%;\r\n}\r\n\r\n#modalauthor, #modalstyle, #modallanguage, #modalyear, #modalname {\r\n    margin-bottom: 1.8%;\r\n    width: 200px;\r\n}\r\n\r\n.buttonDel{\r\n    margin-left: 5%;\r\n}\r\n\r\n.editPage{\r\n    width: 30px;\r\n    height:30px;\r\n    opacity: 0.3;\r\n    border-radius: 5px;\r\n    float: right;\r\n    background: white;\r\n}\r\n.editPage:hover{\r\n    opacity: 0.7;\r\n}\r\n\r\n.editImage {\r\n    display: block;\r\n    margin: 5px auto;\r\n    width: 65%;\r\n    height: auto;\r\n}\r\n\r\n", ""]);
 
 // exports
 
@@ -21580,6 +21578,9 @@ exports.AddBook = AddBook;
 
 
 
+Object.defineProperty(exports, '__esModule', {
+    value: true
+});
 var localStorageData = function localStorageData(item) {
     return JSON.parse(localStorage.getItem(item));
 };
@@ -21587,7 +21588,7 @@ var localStorageData = function localStorageData(item) {
 var bookNoImage = function bookNoImage() {
     var bookNoImage = {
         id: 'noImage',
-        imageSrc: __webpack_require__(87)
+        photo: __webpack_require__(87)
     };
     localStorage.setItem('bookNoImage', JSON.stringify(bookNoImage));
 };
@@ -21599,48 +21600,45 @@ var setImageBook = function setImageBook(item) {
     for (var i = 0; i < imageArray.length; i++) {
         var book = {
             id: imageArray[i].id,
-            imageSrc: imageArray[i].photo ? __webpack_require__(179)("./" + imageArray[i].photo) : ''
+            photo: imageArray[i].photo ? __webpack_require__(179)("./" + imageArray[i].photo) : ''
         };
         bookImageAndId.push(book);
     }
     localStorage.setItem('bookImage', JSON.stringify(bookImageAndId));
 };
 
-function dataDownload(data) {
-    bookNoImage();
-    if (!localStorage.getItem(data)) {
-        var _ret = (function () {
-            var xhr = new XMLHttpRequest();
-            return {
-                v: new Promise(function (resolve, reject) {
-                    xhr.open('GET', '../book.json', true);
-                    xhr.onloadend = function () {
-                        if (xhr.readyState === 4 && xhr.status === 200) {
-                            localStorage.setItem(data, xhr.responseText);
-                            setImageBook(xhr.responseText);
-                            resolve(xhr.responseText);
-                        } else {
-                            reject(xhr.status);
-                        }
-                    };
-                    xhr.send(null);
-                }).then(function () {
+function load(url) {
+    return new Promise(function (resolve, reject) {
+        var xhr = new XMLHttpRequest();
 
-                    return localStorageData(data);
-                }, function (error) {
-                    alert('Ошибка загрузки списка ' + data + '. Код ошибки - ' + error);
-                })
-            };
-        })();
-
-        if (typeof _ret === 'object') return _ret.v;
-    } else {
-        return localStorageData(data);
-    }
+        xhr.open('GET', url, true);
+        xhr.onloadend = function () {
+            if (xhr.readyState === 4 && xhr.status === 200) {
+                resolve(xhr.responseText);
+            } else {
+                reject(xhr.status);
+            }
+        };
+        xhr.send(null);
+    });
 }
 
-module.exports = dataDownload;
+var dataDownload = function dataDownload(data) {
+    bookNoImage();
+    if (!localStorage.getItem(data)) {
+        return load('../book.json').then(function (text) {
+            localStorage.setItem(data, text);
+            setImageBook(text);
+            return localStorageData(data);
+        })['catch'](function (error) {
+            alert('Ошибка загрузки списка ' + data + '. Код ошибки - ' + error);
+        });
+    } else {
+        return Promise.resolve(localStorageData(data));
+    }
+};
 
+exports.dataDownload = dataDownload;
 // if (!localStorage.getItem(data)) {
 //     let xhr = new XMLHttpRequest();
 //     return new Promise((resolve, reject) => {

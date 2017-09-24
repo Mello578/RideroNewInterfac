@@ -10,14 +10,21 @@
 //   return books ? books : allBook();
 // };
 
+
 export const addBookImage = (book) => {
-    let a;
+    const noPhoto = JSON.parse(localStorage.getItem('bookNoImage'));
+    const allBook = JSON.parse(localStorage.getItem('bookImage'));
+    let bookImage;
+    if(book && book.photo){
+        bookImage = allBook.find((item)=>{
+            return item.id === book.id
+        });
+    }else {
+        bookImage = noPhoto;
+    }
 
-    a = book && book.photo
-        ? book
-        : JSON.parse(localStorage.getItem('bookNoImage'));
-
-    return a.imageSrc;
+    debugger
+    return bookImage.photo;
 };
 
 
