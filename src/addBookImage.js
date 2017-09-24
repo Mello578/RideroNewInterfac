@@ -3,16 +3,19 @@
  */
 
 
-const allBook = JSON.parse(localStorage.getItem('bookImage'));
+//const allBook = JSON.parse(localStorage.getItem('bookImage'));
+
+// let allBook = () =>{
+//     const books = JSON.parse(localStorage.getItem('bookImage'));
+//   return books ? books : allBook();
+// };
+
 export const addBookImage = (book) => {
     let a;
-    if(book){
-        a = allBook.find((item)=>{
-            return item.id === book.id
-        });
-    }else{
-        return 'qqqq'
-    }
+
+    a = book && book.photo
+        ? book
+        : JSON.parse(localStorage.getItem('bookNoImage'));
 
     return a.imageSrc;
 };

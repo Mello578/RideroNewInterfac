@@ -26,13 +26,26 @@ class App extends React.Component {
     }
 }
 
+
 (() => {
-    new Promise((resolve) => {
+
         const dataDownload = require('./dataDownload');
-        resolve(dataDownload('book'));
-    }).then((allBook) => {
+
+   const allBook = dataDownload('book');
+   debugger
         render(<App allBook={allBook}/>,
             document.getElementById('content'));
-    });
+
 })();
 
+
+
+// (() => {
+//     new Promise((resolve) => {
+//         const dataDownload = require('./dataDownload');
+//         resolve(dataDownload('book'));
+//     }).then((allBook) => {
+//         render(<App allBook={allBook}/>,
+//             document.getElementById('content'));
+//     });
+// })();
