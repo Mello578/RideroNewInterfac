@@ -1,6 +1,6 @@
 import React from "react";
 import {render} from "react-dom";
-import '..//style/style.css';
+import '../style/style.css';
 import {TableBook} from './tableBook';
 import {dataDownload} from './dataDownload';
 
@@ -13,9 +13,6 @@ class App extends React.Component {
     render() {
         return (
             <div>
-                <div className="headWorkingField headPosition">
-                    <h1 className="textFont">Моя библиотека</h1>
-                </div>
                 <TableBook
                     allBook={this.props.allBook}
                 />

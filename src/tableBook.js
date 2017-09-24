@@ -108,11 +108,12 @@ export class TableBook extends React.Component {
         let allBook = this.getFilteredTable();
 
         return (
-            <div className="nullDiv">
+            <div>
                 <div className={` blackout ${this.state.isModalWindowOpened ? 'modalVisible' : 'modalNoVisible'}`}>
                 </div>
-                <div className="headWorkingField">
-                    <div className="filterAndButton">
+                <header className="headWorkingField">
+                    <h1 className="headerTitle">Моя библиотека</h1>
+                    <div className="headerForm">
                         <input type='text' placeholder='Поиск'
                                className='filterStyle'
                                onChange={(event) => this.refreshFilterString(event)}/>
@@ -122,7 +123,7 @@ export class TableBook extends React.Component {
                             Добавить книгу
                         </button>
                     </div>
-                </div>
+                </header>
                 <div>
                     <AddBook selectedBook={this.state.selectedBook}
                              visibility={this.state.isModalWindowOpened}

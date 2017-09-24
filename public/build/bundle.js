@@ -10427,15 +10427,6 @@ var App = (function (_React$Component) {
             return _react2["default"].createElement(
                 "div",
                 null,
-                _react2["default"].createElement(
-                    "div",
-                    { className: "headWorkingField headPosition" },
-                    _react2["default"].createElement(
-                        "h1",
-                        { className: "textFont" },
-                        "Моя библиотека"
-                    )
-                ),
                 _react2["default"].createElement(_tableBook.TableBook, {
                     allBook: this.props.allBook
                 })
@@ -20598,7 +20589,7 @@ exports = module.exports = __webpack_require__(173)(undefined);
 
 
 // module
-exports.push([module.i, "body {\r\n    background: #f7f7f7;\r\n    font-family: \"Noto Sans\", Arial, sans-serif;\r\n\r\n}\r\n\r\n.headWorkingField {\r\n    width: 97%;\r\n    margin-top: 0px;\r\n    margin-bottom: 40px;\r\n    padding: 35px;\r\n    display: table;\r\n    position: relative;\r\n}\r\n\r\n.headPosition {\r\n    position: absolute;\r\n    background: #ffffff;\r\n}\r\n\r\n.textFont {\r\n    font-size: 34px;\r\n    font-weight: 100;\r\n    width: 300px;\r\n    float: left;\r\n    display: table-cell;\r\n    vertical-align: middle;\r\n    margin-top: 13px;\r\n}\r\n\r\n.filterAndButton {\r\n    text-align: right;\r\n    width: 580px;\r\n    margin: auto;\r\n    display: table-cell;\r\n    vertical-align: middle;\r\n}\r\n\r\n.filterStyle {\r\n    width: 250px;\r\n    height: 55px;\r\n    font-size: 12px;\r\n    padding-left: 20px;\r\n    border: none;\r\n    border-bottom: 2px solid #aeaeae;\r\n    display: table-cell;\r\n    vertical-align: middle;\r\n    margin-left: 30%;\r\n    margin-right: 4%;\r\n}\r\n\r\n.buttonStyle {\r\n    font-size: 14px;\r\n    width: 200px;\r\n    height: 45px;\r\n    background: #8dd6f5;\r\n    color: white;\r\n    border: none;\r\n    border-radius: 25px;\r\n}\r\n\r\n.allBooks{\r\n    text-align: left;\r\n    width: 90%;\r\n    margin: auto;\r\n    display: flex;\r\n    flex-wrap: wrap;\r\n    justify-content: space-around;\r\n}\r\n\r\n.addButton {\r\n    float: right;\r\n}\r\n\r\n.textFont {\r\n    font-size: 34px;\r\n    font-weight: 600;\r\n}\r\n\r\n.nullDiv {\r\n    height: 0px;\r\n}\r\n\r\n.book {\r\n    width: 25%;\r\n    background: white;\r\n    float: left;\r\n    margin: 2%;\r\n    padding: 2%;\r\n    min-width: 300px;\r\n}\r\n\r\n.photo {\r\n    height: 205px;\r\n    width: 145px;\r\n    border: 1px solid black;\r\n    float: left;\r\n}\r\n\r\n.bookContent {\r\n    margin-left: 55%;\r\n}\r\n\r\n#author, #style, #language, #year {\r\n    color: #7e7e7e;\r\n    font-size: 14px;\r\n}\r\n\r\n#name {\r\n    font-size: 20px;\r\n    font-weight: 700;\r\n}\r\n\r\nlabel {\r\n    float: left;\r\n    padding-right: 10px;\r\n}\r\n\r\n.blackout {\r\n    height: 150%;\r\n    width: 100%;\r\n    background: black;\r\n    opacity: 0.8;\r\n    position: absolute;\r\n    z-index: 15;\r\n}\r\n\r\n.modalWindow {\r\n    background: #f2f2f2;\r\n    height: auto;\r\n    width: 680px;\r\n    position: absolute;\r\n    left: 50%;\r\n    margin-left: -300px;\r\n    z-index: 100;\r\n    opacity: 1;\r\n    border-radius: 5px;\r\n    padding: 0;\r\n}\r\n\r\n.modalNoVisible {\r\n    display: none;\r\n}\r\n\r\n.modalVisible {\r\n    display: block;\r\n}\r\n\r\n.modalHeader {\r\n    background: white;\r\n    height: 60px;\r\n    width: 94%;\r\n\r\n    font-size: 30px;\r\n    margin-top: 0px;\r\n    padding: 20px;\r\n    display: table;\r\n}\r\n\r\nh3 {\r\n    margin: 0px;\r\n    display: table-cell;\r\n    vertical-align: middle;\r\n}\r\n\r\n.closeModal {\r\n    float: right;\r\n    margin: 10px;\r\n}\r\n\r\n.photoModal{\r\n    background: white;\r\n    margin-right: 5%;\r\n    margin-bottom: 6%;\r\n}\r\n\r\n.modalContent{\r\n    margin: 5%;\r\n}\r\n\r\n#modalauthor, #modalstyle, #modallanguage, #modalyear, #modalname {\r\n    margin-bottom: 1.8%;\r\n    width: 200px;\r\n}\r\n\r\n.buttonDel{\r\n    margin-left: 5%;\r\n}\r\n\r\n.editPage{\r\n    width: 30px;\r\n    height:30px;\r\n    opacity: 0.3;\r\n    border-radius: 5px;\r\n    float: right;\r\n    background: white;\r\n}\r\n.editPage:hover{\r\n    opacity: 0.7;\r\n}\r\n\r\n.editImage {\r\n    display: block;\r\n    margin: 5px auto;\r\n    width: 65%;\r\n    height: auto;\r\n}\r\n\r\n", ""]);
+exports.push([module.i, "head, body {\n    width: 100%;\n    height: 100%;\n    margin: 0;\n    padding: 0;\n}\n\nbody {\n    background: #f7f7f7;\n    font-family: \"Noto Sans\", Arial, sans-serif;\n\n}\n\n.headWorkingField {\n    width: 100%;\n    min-height: 150px;\n    margin-top: 0px;\n    margin-bottom: 40px;\n    display: flex;\n    position: relative;\n    align-items: center;\n    background: white;\n    justify-content: space-between;\n    flex-wrap: wrap;\n    padding-bottom: 10px;\n}\n\n@media screen and (max-width: 1000px) {\n    .headWorkingField { justify-content: center; }\n    .headerForm { justify-content: center; }\n}\n\n\n.headPosition {\n    position: absolute;\n    background: #ffffff;\n}\n\n.headerTitle {\n    font-size: 34px;\n    font-weight: 100;\n    width: 300px;\n    float: left;\n    display: table-cell;\n    vertical-align: middle;\n    margin-top: 13px;\n    margin-left: 50px;\n}\n\n.headerForm {\n    display: flex;\n    margin-right: 50px;\n    flex-wrap: wrap;\n}\n\n.filterStyle {\n    width: 250px;\n    height: 55px;\n    font-size: 12px;\n    padding-left: 20px;\n    border: none;\n    border-bottom: 2px solid #aeaeae;\n    margin-right: 20px;\n    margin-bottom: 10px;\n}\n\n.buttonStyle {\n    font-size: 14px;\n    width: 200px;\n    height: 45px;\n    background: #8dd6f5;\n    color: white;\n    border: none;\n    border-radius: 25px;\n}\n\n.allBooks {\n    text-align: left;\n    width: 90%;\n    margin: auto;\n    display: flex;\n    flex-wrap: wrap;\n    justify-content: space-around;\n}\n\n.addButton {\n    float: right;\n}\n\n.headerTitle {\n    font-size: 34px;\n    font-weight: 600;\n}\n\n.book {\n    width: 25%;\n    background: white;\n    float: left;\n    margin: 2%;\n    padding: 2%;\n    min-width: 300px;\n}\n\n.photo {\n    height: 205px;\n    width: 145px;\n    border: 1px solid black;\n    float: left;\n}\n\n.bookContent {\n    margin-left: 55%;\n}\n\n#author, #style, #language, #year {\n    color: #7e7e7e;\n    font-size: 14px;\n}\n\n#name {\n    font-size: 20px;\n    font-weight: 700;\n}\n\nlabel {\n    float: left;\n    padding-right: 10px;\n}\n\n.blackout {\n    height: 100%;\n    width: 100%;\n    background: black;\n    opacity: 0.8;\n    position: fixed;\n    z-index: 15;\n}\n\n.modalWindow {\n    background: #f2f2f2;\n    height: auto;\n    width: 680px;\n    position: fixed;\n    z-index: 100;\n    opacity: 1;\n    border-radius: 5px;\n    padding: 0;\n    left: 50%;\n    top: 50%;\n    transform: translate(-50%, -50%);\n}\n\n.modalNoVisible {\n    display: none;\n}\n\n.modalVisible {\n    display: block;\n}\n\n.modalHeader {\n    background: white;\n    height: 60px;\n    width: 94%;\n\n    font-size: 30px;\n    margin-top: 0px;\n    padding: 20px;\n    display: table;\n}\n\nh3 {\n    margin: 0px;\n    display: table-cell;\n    vertical-align: middle;\n}\n\n.closeModal {\n    float: right;\n    margin: 10px;\n}\n\n.photoModal {\n    background: white;\n    margin-right: 5%;\n    margin-bottom: 6%;\n}\n\n.modalContent {\n    margin: 5%;\n}\n\n#modalauthor, #modalstyle, #modallanguage, #modalyear, #modalname {\n    margin-bottom: 1.8%;\n    width: 200px;\n}\n\n.buttonDel {\n    margin-left: 5%;\n}\n\n.editPage {\n    width: 30px;\n    height: 30px;\n    opacity: 0.3;\n    border-radius: 5px;\n    float: right;\n    background: white;\n}\n\n.editPage:hover {\n    opacity: 0.7;\n}\n\n.editImage {\n    display: block;\n    margin: 5px auto;\n    width: 65%;\n    height: auto;\n}\n\n", ""]);
 
 // exports
 
@@ -21295,14 +21286,19 @@ var TableBook = (function (_React$Component) {
 
             return _react2['default'].createElement(
                 'div',
-                { className: 'nullDiv' },
+                null,
                 _react2['default'].createElement('div', { className: ' blackout ' + (this.state.isModalWindowOpened ? 'modalVisible' : 'modalNoVisible') }),
                 _react2['default'].createElement(
-                    'div',
+                    'header',
                     { className: 'headWorkingField' },
                     _react2['default'].createElement(
+                        'h1',
+                        { className: 'headerTitle' },
+                        'Моя библиотека'
+                    ),
+                    _react2['default'].createElement(
                         'div',
-                        { className: 'filterAndButton' },
+                        { className: 'headerForm' },
                         _react2['default'].createElement('input', { type: 'text', placeholder: 'Поиск',
                             className: 'filterStyle',
                             onChange: function (event) {
